@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-<<<<<<< HEAD
+
 import { BusquedaComponent } from './Componets/busqueda/busqueda.component';
 import { HomeComponent } from './Componets/home/home.component';
 
