@@ -10,10 +10,6 @@ const routes: Routes = [
 
 
 ];
-=======
-
-const routes: Routes = [];
->>>>>>> main
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
