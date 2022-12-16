@@ -1,1 +1,26 @@
 <p>home works!</p>
+<div class="card-columns container ">
+
+    <div class="card animated fadein fast cuadrar" *ngFor="let item of ArtSpotify">
+
+
+        <img class="card-img-top img-fluid" [src]="item.images[0].url" alt="">
+
+        <div class="card-body">
+
+            <h4 class="card-title">{{item.name}}</h4>
+            <p class="card-text">{{item.type}}</p>
+
+
+
+            <div class="probar">
+                <button class="btn btn-outline-primary btn-block">ver mas</button>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>

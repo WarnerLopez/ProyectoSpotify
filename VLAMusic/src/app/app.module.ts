@@ -10,6 +10,9 @@ import { BusquedaComponent } from './Componets/busqueda/busqueda.component';
 import { FooterComponent } from './Componets/footer/footer.component';
 import{HttpClientModule} from '@angular/common/http';
 
+//services
+import { ApiSpotifyService } from './Services/api-spotify.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,9 @@ import{HttpClientModule} from '@angular/common/http';
     HttpClientModule
 
 ],
-  providers: [],
+  providers: [
+    ApiSpotifyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
