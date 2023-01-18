@@ -4,13 +4,12 @@
     <div class="card animated fadein fast cuadrar" *ngFor="let item of ArtSpotify">
 
         <!-- otra forma de hacer interpolacion con el src  -->
-        <img class="card-img-top img-fluid" [src]="item.imagen" alt="">
+        <img class="card-img-top img-fluid" [src]="item.images[0].url" alt="">
 
         <div class="card-body">
 
             <h4 class="card-title">{{item.name}}</h4>
             <p class="card-text">{{item.type}}</p>
-            <p class="card-text">{{item.album_type}}</p>
 
 
             <div class="probar">

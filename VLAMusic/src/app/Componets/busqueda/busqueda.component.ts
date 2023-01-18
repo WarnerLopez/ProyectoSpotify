@@ -24,11 +24,7 @@ export class BusquedaComponent implements OnInit {
       console.log(data['termino']);
       this.temp =data['termino']
     console.log(this.temp)
-     // this.ArtSpotify= this._api.search(data['termino']);
-      
-   // this.ArtSpotify = this._heroeservice.BuscarHeroes(data['termino']);
-      
-      //console.log(this.mivariable)
+    
       
     })
     
@@ -36,14 +32,7 @@ export class BusquedaComponent implements OnInit {
   }
  
 
-  // buscarArtista(){
-
-  //   this._api.getNewReleases().subscribe(data =>{
-  //     console.log(data)
-  //     this.ArtSpotify = data.albums.items
-
-  //   })
-  // }
+ 
 
   
   //1sacar la informacion del artista de la linea 22
@@ -72,11 +61,5 @@ export class BusquedaComponent implements OnInit {
 
 
 
-  //search(query: string) {
-   // this._api.search(query).subscribe(results => {
-    //  this.searchResults = results;
-   // });
-   // console.log(this.searchResults+"asdasd")
- // }
-
+ 
 }
