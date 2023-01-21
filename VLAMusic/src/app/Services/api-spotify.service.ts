@@ -10,36 +10,43 @@ import { map, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiSpotifyService {
+  url1 = 'https://api.spotify.com/v1/browse/new-releases?limit=30'
   
-  accessToken: string = "Bearer BQB7QWM_IN4LBKBdMHSrTfKvfJZxzk403kOrFtx5A8y_JMtdozv-j7APm4XPT7mAC0xEd8YJ2StJZJJSqE6EwQewP68Lgm_9K4Zjvp8RNU1sJlFzBTo";
+  
   temp: string=""
+
+
   constructor( private _http: HttpClient) { 
   this.search(this.temp)
-
+  
   }
 
   getNewReleases():Observable<any>{
-     var url = 'https://api.spotify.com/v1/browse/new-releases?limit=30'
      
-               
-
       const headers = new HttpHeaders({
-        "Authorization" :"Bearer BQCJwuZCSNHZjI-opup5j_Ek38w7-B720YRTBmmy5j-w0TG_8HJkP9rkyfxHEwwLG8HLMk8L_QPhS5xh2u0KfdmgmShfhKiOySVfB7FfrQ4ywUEArV8"
+        "Authorization" :"Bearer BQCYiJ5d0nAAYQQTtyz4efbGQreTIx9yD3EnDgReD-7mGSkDpDk9L_-Fhd1_kG8FKED6UfiL1QxUO_HNOFe1eDhaOF8vRqf4OxVFnLBsRqT7gH4l56E"
         
       });
-   const artis = this._http.get<any>(url, {headers})
-    return this._http.get<any>(url, {headers})
+      
+   const artis = this._http.get<any>(this.url1, {headers})
+    return this._http.get<any>(this.url1, {headers})
     
 
   }
 
   search(query: string): Observable<any> {
     const headers = new HttpHeaders({
-      "Authorization" :"Bearer BQCJwuZCSNHZjI-opup5j_Ek38w7-B720YRTBmmy5j-w0TG_8HJkP9rkyfxHEwwLG8HLMk8L_QPhS5xh2u0KfdmgmShfhKiOySVfB7FfrQ4ywUEArV8"
+      "Authorization" :"Bearer BQCYiJ5d0nAAYQQTtyz4efbGQreTIx9yD3EnDgReD-7mGSkDpDk9L_-Fhd1_kG8FKED6UfiL1QxUO_HNOFe1eDhaOF8vRqf4OxVFnLBsRqT7gH4l56E"
       
     });
+    
     return this._http.get(`https://api.spotify.com/v1/search?q=${query}&type=artist`, {headers});
   }
+
+
+
+
+ 
  
 
 

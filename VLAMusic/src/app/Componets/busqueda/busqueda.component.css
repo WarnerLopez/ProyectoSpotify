@@ -1,3 +1,31 @@
 .home{
     height: 700px;
 }
+.cuadrar{
+    height: 550px;
+}
+.imagenes{
+    height: 350px;
+}
+.btn1 {
+    margin-top: 15px;
+    padding: 0.6em 1.2em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(120deg, darkmagenta, crimson, orange);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .5s;
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .btn1:hover {
+    background-position: 0 0;
+  }
+  .alinear{
+    justify-content: flex-end
+
+  }
