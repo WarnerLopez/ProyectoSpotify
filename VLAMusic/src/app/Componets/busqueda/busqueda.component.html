@@ -2,18 +2,16 @@
 <div class="card-columns container ">
     <div class="card animated fadein fast cuadrar" *ngFor="let item of ArtSpotify">
 
+        <img  class="card-img-top img-fluid imagenes"  [src]="item.images | noimage"  alt="">
        
-       
-        <!-- <img [src]="imageUrl" onError="this.src='path/to/default-image.png'"> -->
-        
-        
-        <img  class="card-img-top img-fluid imagenes"  [src]="item.images[0].url"   alt="">
         
 
         <div class="card-body alinear">
 
             <h4 class="card-title">{{item.name}}</h4>
             <p class="card-text">{{item.type}}</p>
+            <p class="card-text">{{item.genres}}</p>
+            
 
 
             <div class="probar">

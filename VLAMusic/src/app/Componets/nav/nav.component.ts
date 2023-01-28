@@ -14,7 +14,8 @@ export class NavComponent implements OnInit {
   }
 
   traerPnav(artista:string){
-   console.log(artista) 
+    
+    console.log(artista)
    this._router.navigate(['buscar/',artista]) 
 
   }

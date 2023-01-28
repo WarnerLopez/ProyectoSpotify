@@ -2,10 +2,6 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 
-
-
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -24,7 +20,7 @@ export class ApiSpotifyService {
   getNewReleases():Observable<any>{
      
       const headers = new HttpHeaders({
-        "Authorization" :"Bearer BQDctXhOrAhise3qA4zQx3KnY24uspSQJXbbNfckv2VVMdqC4m-8f6woD1d1fnRwu2KRZyGeLd5IMurbeLn95uv7WcEZ6dlUNbbag-UJLYkvDWi6g8Go"
+        "Authorization" :"Bearer BQD0f5wzx0TN_5hFVQPxOKn6UDrjRK_8TkUrmxIUOvEqQEf1yMnWR2t9Cb76PCMF4nD_l-PMdTjUGUZmFdPI2YarGbzotplMNVRqoXszIsQO1-HLqU2-"
         
       });
       
@@ -36,7 +32,7 @@ export class ApiSpotifyService {
 
   search(query: string): Observable<any> {
     const headers = new HttpHeaders({
-      "Authorization" :"Bearer BQDctXhOrAhise3qA4zQx3KnY24uspSQJXbbNfckv2VVMdqC4m-8f6woD1d1fnRwu2KRZyGeLd5IMurbeLn95uv7WcEZ6dlUNbbag-UJLYkvDWi6g8Go"
+      "Authorization" :"Bearer BQD0f5wzx0TN_5hFVQPxOKn6UDrjRK_8TkUrmxIUOvEqQEf1yMnWR2t9Cb76PCMF4nD_l-PMdTjUGUZmFdPI2YarGbzotplMNVRqoXszIsQO1-HLqU2-"
       
     });
     

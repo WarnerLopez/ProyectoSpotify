@@ -12,26 +12,20 @@ export class BusquedaComponent implements OnInit {
   BusquedaSensitiva: any = [];
   ArtSpotify: any = [];
   temp: string=""
-  newImageUrl: any = "https://ruizhealytimes.com/wp-content/uploads/2015/07/musica.jpg"
+  newImageUrl: any
   constructor(private _api:ApiSpotifyService,private _route: ActivatedRoute) {
 
    }
 
   ngOnInit(): void {
-    this.updateImage();
     this._route.params.subscribe(data =>{
-    this.temp =data['termino']
-    
-
-    
-    })
-    
-    this.search(this.temp)
+      this.temp =data['artista']
+      this.search(this.temp)
+      })
+      
   }
-  updateImage() {
+ 
   
-   
-  }
  
 
   search(query: string) {

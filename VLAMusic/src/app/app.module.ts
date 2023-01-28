@@ -13,6 +13,7 @@ import{HttpClientModule} from '@angular/common/http';
 //services
 import { ApiSpotifyService } from './Services/api-spotify.service';
 import { FormsModule } from '@angular/forms';
+import { NoimagePipe } from './Pipe/noimage.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     NavComponent,
     BusquedaComponent,
-    FooterComponent
+    FooterComponent,
+    NoimagePipe
   ],
   imports: [
     BrowserModule,
