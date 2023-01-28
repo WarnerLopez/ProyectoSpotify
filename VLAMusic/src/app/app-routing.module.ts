@@ -8,6 +8,7 @@ const routes: Routes = [
   {path:'home' , component:HomeComponent},
   {path:'busqueda' , component:BusquedaComponent},
   {path:'buscar/:termino', component:BusquedaComponent},
+  {path:'**', pathMatch:'full', redirectTo:'home'}
 
 
 

@@ -1,12 +1,13 @@
-<h1 class="animated fadein fasr text-center">Buscador</h1>
-<hr>
+
 <div class="card-columns container ">
     <div class="card animated fadein fast cuadrar" *ngFor="let item of ArtSpotify">
 
-        <!-- otra forma de hacer interpolacion con el src  -->
        
+       
+        <!-- <img [src]="imageUrl" onError="this.src='path/to/default-image.png'"> -->
         
-        <img  class="card-img-top img-fluid imagenes"  [src]="item.images[0].url"  alt="">
+        
+        <img  class="card-img-top img-fluid imagenes"  [src]="item.images[0].url"   alt="">
         
 
         <div class="card-body alinear">

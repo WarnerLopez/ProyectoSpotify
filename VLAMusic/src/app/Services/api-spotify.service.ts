@@ -24,7 +24,7 @@ export class ApiSpotifyService {
   getNewReleases():Observable<any>{
      
       const headers = new HttpHeaders({
-        "Authorization" :"Bearer BQCYiJ5d0nAAYQQTtyz4efbGQreTIx9yD3EnDgReD-7mGSkDpDk9L_-Fhd1_kG8FKED6UfiL1QxUO_HNOFe1eDhaOF8vRqf4OxVFnLBsRqT7gH4l56E"
+        "Authorization" :"Bearer BQDctXhOrAhise3qA4zQx3KnY24uspSQJXbbNfckv2VVMdqC4m-8f6woD1d1fnRwu2KRZyGeLd5IMurbeLn95uv7WcEZ6dlUNbbag-UJLYkvDWi6g8Go"
         
       });
       
@@ -36,7 +36,7 @@ export class ApiSpotifyService {
 
   search(query: string): Observable<any> {
     const headers = new HttpHeaders({
-      "Authorization" :"Bearer BQCYiJ5d0nAAYQQTtyz4efbGQreTIx9yD3EnDgReD-7mGSkDpDk9L_-Fhd1_kG8FKED6UfiL1QxUO_HNOFe1eDhaOF8vRqf4OxVFnLBsRqT7gH4l56E"
+      "Authorization" :"Bearer BQDctXhOrAhise3qA4zQx3KnY24uspSQJXbbNfckv2VVMdqC4m-8f6woD1d1fnRwu2KRZyGeLd5IMurbeLn95uv7WcEZ6dlUNbbag-UJLYkvDWi6g8Go"
       
     });
     

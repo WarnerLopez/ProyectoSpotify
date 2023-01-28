@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(220.55deg, #EAEAEA 0%, #8B8B8B 100%);
+    background: linear-gradient(220.55deg, #B9A14C 0%, #000000 100%);
     color: rgb(7, 6, 6) !important;
 }
 
@@ -62,4 +62,10 @@ fast {
     animation-duration: 0.4s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+}
+.cuadrar{
+    box-shadow: 20px 20px 15px;
+}
+.container{
+    padding-top: 50px;
 }

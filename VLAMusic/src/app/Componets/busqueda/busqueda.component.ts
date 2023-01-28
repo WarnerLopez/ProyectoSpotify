@@ -12,27 +12,25 @@ export class BusquedaComponent implements OnInit {
   BusquedaSensitiva: any = [];
   ArtSpotify: any = [];
   temp: string=""
-  newImageUrl: string=""
+  newImageUrl: any = "https://ruizhealytimes.com/wp-content/uploads/2015/07/musica.jpg"
   constructor(private _api:ApiSpotifyService,private _route: ActivatedRoute) {
 
    }
 
   ngOnInit(): void {
     this.updateImage();
-
     this._route.params.subscribe(data =>{
-
-     
     this.temp =data['termino']
-    this.BusquedaSensitiva = this._api.search(data['termino']);
     
-      
+
+    
     })
     
     this.search(this.temp)
   }
   updateImage() {
-    this.newImageUrl = 'https://ruizhealytimes.com/wp-content/uploads/2015/07/musica.jpg';
+  
+   
   }
  
 
@@ -41,8 +39,9 @@ export class BusquedaComponent implements OnInit {
     this._api.search(query).subscribe((data:any) => {
      console.log(data)
      this.ArtSpotify=data.artists.items
-     //console.log(this.ArtSpotify)
     });
+
+   
   }
 
 
