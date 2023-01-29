@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
     this.getArtis()
 
   }
+  mostrar = false
 
   getArtis(){
 

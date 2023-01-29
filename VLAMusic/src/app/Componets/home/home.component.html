@@ -1,26 +1,48 @@
+<div class="container">
+    <section >
+        <img src="assets/imagenes/adele.png" alt="">
+        <img src="assets/imagenes/adriana.png" alt="">
+        <img src="assets/imagenes/pink.png" alt="">
+        
+        <img src="assets/imagenes/Shakira.png" alt="">
+    </section>
 
+
+</div>
+
+
+  
 <div class="card-columns container ">
+    <div *ngIf="mostrar">
 
-    <div class="home card animated fadein fast cuadrar" *ngFor="let item of ArtSpotify">
-
-
-        <img class="card-img-top img-fluid" [src]="item.images[0].url" alt="">
-
-        <div class="card-body">
-
-            <h4 class="card-title">{{item.name}}</h4>
-            <p class="card-text">{{item.type}}</p>
-            <p class="card-text">{{item.genres}}</p>
+        <div class="home card animated fadein fast cuadrar" *ngFor="let item of ArtSpotify">
 
 
-            <div class="probar">
-                <button class="btn btn-outline-primary btn-block btn1">ver mas</button>
-
+            <img class="card-img-top img-fluid" [src]="item.images[0].url" alt="">
+    
+            <div class="card-body">
+    
+                <h4 class="card-title">{{item.name}}</h4>
+                <p class="card-text">{{item.type}}</p>
+                <p class="card-text">{{item.genres}}</p>
+    
+    
+                <div class="probar">
+                    <button class="btn btn-outline-primary btn-block btn1">ver mas</button>
+    
+                </div>
             </div>
+    
+    
+    
         </div>
 
-
-
     </div>
+    <button class="btn1" (click)="mostrar = !mostrar"> Mostrar/Ocultar</button>
+    
+
+    
+
+    
 
 </div>
