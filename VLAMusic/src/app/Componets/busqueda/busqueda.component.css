@@ -2,7 +2,7 @@
     height: 700px;
 }
 .cuadrar{
-    height: 550px;
+    height: 580px;
 }
 .imagenes{
     height: 350px;
@@ -28,4 +28,10 @@
   .alinear{
     justify-content: flex-end
 
+  }
+  .container{
+    margin-top: 50px;
+  }
+  .tamano{
+    height: 120px;
   }
